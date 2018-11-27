@@ -249,6 +249,37 @@ print("Sincerely, Evan")
 - They have not been "saved" to your repository yet!
 
 
+### 3.1 Tell Git who you are
+
+If you saw a red error message like this:
+
+``` none
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'atomuser@WIN-VU79AHTD4PV.(none)')
+```
+
+
+### Tell Git who you are
+
+- Edit file ".git/config"
+- Add to the end of the file:
+
+``` none
+[user]
+  name = Your Name
+  email = you@example.com
+```
+
+
 ### 4. "Commit" the changes
 
 Save your edits to a new version of the project
