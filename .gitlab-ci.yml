@@ -1,0 +1,10 @@
+pages:
+  image: docker.catalyst.net.nz/catalyst/ubuntu:bionic
+  tags: [docker]
+  before_script:
+    - apt-get update
+    - apt-get install -y git
+  script:
+    - git clone . public
+  artifacts:
+    paths: [public]
