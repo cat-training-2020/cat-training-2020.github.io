@@ -7,9 +7,13 @@ Version control with Git and GitHub
 
 ## Introduction
 
-- Evan Hanson
-- <evanh@catalyst.net.nz>
+- Evan Giles and Rebecca Blundell
+ <evan@catalyst.net.nz>
+ <rebeccablundell@catalyst.net.nz>
 - Please interrupt to ask questions
+
+Note:
+This is us.
 
 
 ## Administrivia
@@ -18,6 +22,9 @@ Version control with Git and GitHub
 - Water
 - Fire exits
 - Meeting point
+
+Note:
+Pravin: Do we need to do this or is it taken care of?
 
 
 ## Administrivia
@@ -35,6 +42,7 @@ Version control with Git and GitHub
   3. <!-- .element class="fragment" --> Discussion of GitHub workflows
   4. <!-- .element class="fragment" --> Hands-on with Git on the command line
 
+Note: Need a place to host slides! They're not there!
 
 ## Overview
 
@@ -148,7 +156,7 @@ Initialise a new "repository" from within GitHub
 ### Create a project
 
 - Enter repository name **cs4hs**
-- Check **Initialize this repository with a README**
+- Check **Add a README file**
 - Click **Create repository**
 
 
@@ -219,16 +227,16 @@ This is a project used to experiment with Git and GitHub.
 
 
 ### Add a Python program
-
 - Enter **Control-Shift-P** and **Add File**
 - Enter the path for the new file: **hello.py**
 
 ``` python
-print("Dear world,")
+print("Kia ora koutou,")
 print("")
-print("Hello!")
+print("This is a simple python program.")
+print("What does it do? Just prints out this message.")
 print("")
-print("Sincerely, Evan")
+print("Ngā mihi, Evan & Rebecca")
 ```
 
 - Remember to save with **Control-S**
@@ -265,9 +273,11 @@ to set your account's default identity.
 Omit --global to set the identity only in this repository.
 
 fatal: unable to auto-detect email address (got 'atomuser@WIN-VU79AHTD4PV.(none)')
+
 ```
 
-
+Note: Need to edit the config file in .git to avoid using terminal
+
 ### Tell Git who you are
 
 - Edit file ".git/config"
@@ -345,6 +355,8 @@ Now you can publish these new commits on GitHub
   - Enter your password
   - Check **Remember**
 - Visit GitHub to view your published changes
+
+Notes: Need to confirm this process
 
 
 ## Review
@@ -429,6 +441,8 @@ print("PS. I'm learning Git")
 - To push these commits you must "force push"
 - **Right-Click** and choose **Force Push**
   - This overwrites data on the remote repository!
+
+Notes: confirm this process.
 
 
 ## Branches
@@ -843,8 +857,9 @@ Using the Git program from the terminal
 
 ## Thanks!
 
-- Evan Hanson
+- Evan Giles & Rebecca Blundell
 - <evanh@catalyst.net.nz>
+- <rebeccablundell@catalyst.net.nz>
 - Slides will be emailed out
 - Don't hesitate to contact me!
 
