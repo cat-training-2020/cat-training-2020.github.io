@@ -4,17 +4,16 @@
 
 Version control with Git and GitHub
 
-
+
 ## Introduction
 
 - Evan Giles and Rebecca Blundell
- <evan@catalyst.net.nz>
- <rebeccablundell@catalyst.net.nz>
+<evan@catalyst.net.nz>
+<rebeccablundell@catalyst.net.nz>
 - Please interrupt to ask questions
 
 Note:
 This is us.
-
 
 ## Administrivia
 
@@ -25,7 +24,6 @@ This is us.
 
 Note:
 Pravin: Do we need to do this or is it taken care of?
-
 
 ## Administrivia
 
@@ -34,7 +32,7 @@ Pravin: Do we need to do this or is it taken care of?
 
 ## Overview
 
-- These slides are online: http://cat-train.github.com/
+- These slides are online: somewhere-tbc
 - Tutorial format (with some lecturing thrown in)
 - Tutorial will be in phases (time permitting)
   1. <!-- .element class="fragment" --> Hands-on with GitHub and Atom
@@ -43,7 +41,7 @@ Pravin: Do we need to do this or is it taken care of?
   4. <!-- .element class="fragment" --> Hands-on with Git on the command line
 
 Note: Need a place to host slides! They're not there!
-
+
 ## Overview
 
 - Git is a powerful and potentially complex tool
@@ -73,6 +71,11 @@ Why is it useful?
 3. <!-- .element class="fragment" --> Synchronise files between different locations
 4. <!-- .element class="fragment" --> Test changes without losing the original copy
 
+Note: 1. See who made changes when
+2. Combine changes from different versions
+3. Local, remote, many people
+4. Work on a separate 'branch' or easily return to a past version
+
 
 ## Git
 
@@ -82,6 +85,8 @@ Why Git and not some other software?
 2. <!-- .element class="fragment" --> Flexibility
 3. <!-- .element class="fragment" --> **Popularity**
 
+Note: Industry standard, lightweight
+(Evan to comment on other possibilities, if needed)
 
 # GitHub
 
@@ -94,6 +99,10 @@ GitHub is a **hosting site for Git repositories**
 
 (with lots of extra features)
 
+Note: Website allowing collaboration using git.
+
+Can see/share/edit/manage files online, even serve a website with Github pages
+
 
 ## GitHub
 
@@ -103,6 +112,9 @@ Why is GitHub useful?
 2. <!-- .element class="fragment" --> Interface for browsing and editing code
 3. <!-- .element class="fragment" --> Workflows for collaborating with others
 4. <!-- .element class="fragment" --> API for doing other fancy things
+5. <!-- .element class="fragment" --> Comprehensive documentation: https://docs.github.com/en
+
+Note: Demo? Add screenshot of repo?
 
 
 ## GitHub
@@ -110,6 +122,8 @@ Why is GitHub useful?
 Why GitHub and not some other software?
 
 1. <!-- .element class="fragment" --> **Popularity**
+
+Note: Free, accessible to everyone, great for community/ education
 
 
 # Atom
