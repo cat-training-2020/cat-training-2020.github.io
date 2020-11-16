@@ -163,7 +163,7 @@ Initialise a new "repository" from within GitHub
   - If you have an account, log in
   - If you don't, create one
     - You may need to verify your email address
-- Click **New repository**
+- Click **New**
   - Or navigate to <https://github.com/new>
 
 
@@ -200,7 +200,6 @@ Copy the project so you can edit it
 
 - Open Atom
   - Close any "welcome" tabs
-  - Change the theme (if desired)
 
 
 ### Clone the cs4hs repository
@@ -208,12 +207,13 @@ Copy the project so you can edit it
 - Press **Control-Shift-P** to enter a command
   - Type **GitHub: Clone** and press **Enter**
 - Choose file locations
-  - **Clone from:** your GitHub repository URL
-  - **To directory:** wherever (but remember where!)
+  - **Clone from:** your GitHub repository URL https://github.com/yourname/cs4hs
+  - **To directory:** wherever you like, e.g. home/yourname/code/cs4hs
 
 
 ### Local cs4hs repository
 
+- To see 'tree' view press Alt + \ or View -> 'Toggle tree view'
 - Exists on your computer
   - It is a "local" repository
 - Files and folders behave as usual
