@@ -111,7 +111,7 @@ Why is GitHub useful?
 1. <!-- .element class="fragment" --> Free hosting for open source projects
 2. <!-- .element class="fragment" --> Interface for browsing and editing code
 3. <!-- .element class="fragment" --> Workflows for collaborating with others
-4. <!-- .element class="fragment" --> API for doing other fancy things
+4. <!-- .element class="fragment" --> Create a static website with GitHub pages
 5. <!-- .element class="fragment" --> Comprehensive documentation: https://docs.github.com/en
 
 Note: Demo? Add screenshot of repo?
@@ -207,18 +207,18 @@ Copy the project so you can edit it
 - Press **Control-Shift-P** to enter a command
   - Type **GitHub: Clone** and press **Enter**
 - Choose file locations
-  - **Clone from:** your GitHub repository URL https://github.com/yourname/cs4hs
+  - **Clone from:** your GitHub repository URL <https://github.com/username/cs4hs>
   - **To directory:** wherever you like, e.g. home/yourname/code/cs4hs
-
+  - To view folder pane on left in Atom, press Alt + \ or View -> 'Toggle tree view'
 
 ### Local cs4hs repository
 
-- To see 'tree' view press Alt + \ or View -> 'Toggle tree view'
 - Exists on your computer
   - It is a "local" repository
 - Files and folders behave as usual
 - Linked to the version on GitHub
 
+Note: draw picture
 
 ### 3. Change some files
 
@@ -273,27 +273,23 @@ print("Ngā mihi, Evan & Rebecca")
 
 ### 3.1 Tell Git who you are
 
-If you saw a red error message like this:
+- Click the **Git** button on the lower right corner of your Atom window
 
-``` none
-*** Please tell me who you are.
+ - You should see a **Git Identity** pane
 
-Run
+- Check the username and email you want to use for commits are correct
 
-  git config --global user.email "you@example.com"
-  git config --global user.name "Your Name"
+- Click **Continue**
 
-to set your account's default identity.
-Omit --global to set the identity only in this repository.
 
-fatal: unable to auto-detect email address (got 'atomuser@WIN-VU79AHTD4PV.(none)')
 
-```
+Note: The 'git' pane in Atom has this
+or edit the config file in .git to avoid using terminal
 
-Note: Need to edit the config file in .git to avoid using terminal
-
+
 ### Tell Git who you are
 
+An alternative to setting your **Git Identity** as above, is editing the config file:
 - Edit file ".git/config"
 - Add to the end of the file:
 
@@ -319,6 +315,7 @@ Save your edits to a new version of the project
 - A "commit" is a version
   - Includes a message and attribution information
 
+
 
 ### Stage the edited file
 
@@ -326,11 +323,14 @@ Save your edits to a new version of the project
 - Your changes are currently "unstaged"
 - **Right-click** and **Stage** "README.md"
 
+Note: <>Jump to File opens for editing, stage file adds all, stage hunk (visible), click in file to stage line
+
+Can unstage in the same ways
 
 ### Commit the edited file
 
 - Enter a **Commit message**: something descriptive
-- Click **Commit to master**
+- Click **Commit to main**
 
 
 ### Stage and commit the new file
@@ -364,13 +364,20 @@ Now you can publish these new commits on GitHub
 
 ### Push your commits
 
+- Open the "GitHub" pane
+- Click **Login**
+- Follow the link to <https://github.atom.io/login>
+- Copy the generated token
+- Paste it into Atom under **Enter Token**
+- Click **Login**
+
+### Push your commits
+
 - Open the "Git" pane
-- Click **Push 2**
-  - Enter your password
-  - Check **Remember**
+- Click **Push 2** on the bottom right in Atom
 - Visit GitHub to view your published changes
 
-Notes: Need to confirm this process
+Note:
 
 
 ## Review
@@ -424,13 +431,15 @@ What to do when you've made a mistake?
 - Edit "hello.py" and add two lines at the end
 
 ``` python
-print("Dear world,")
+print("Kia ora koutou,")
 print("")
-print("Hello!")
+print("This is a simple python program.")
+print("What does it do? Just prints out this message.")
 print("")
-print("Sincerely, Evan")
+print("Ngā mihi, Evan & Rebecca")
 print("")
 print("PS. I'm learning Git")
+
 ```
 
 - Save the file
@@ -448,6 +457,8 @@ print("PS. I'm learning Git")
 
 - Hover over the button you used to push
   - What does it say now?
+
+Note: Pull 1. Need diagram of what happened. We undid after pushing to remote, so repos diverged. Either fix merge conflict or force push.
 
 
 ### Push the commit
