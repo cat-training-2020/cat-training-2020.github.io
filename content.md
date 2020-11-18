@@ -544,23 +544,6 @@ Note: Pull 1. Need diagram of what happened. We undid after pushing to remote, s
 Note: confirm this process.
 Are you sure slide
 
-### Fix the merge conflict first
-
-~~To push these commits you must "force push"~~
-~~**Right-Click** and choose **Force Push**~~
-
-Let's fix the merge conflict instead.
-
-
-### Merge Conflicts
-1. We have two versions of a file
-2. The remote version is out of sync with our local version
-3. We need to confirm the changes we want and save
-3. We stage the saved changes
-4. Atom suggests a new commit message for the merge
-5.
-
-Note: This doesn't work because Atom fails to allow you to commit the merge. You have to fix it in terminal.
 
 ## Branches
 
