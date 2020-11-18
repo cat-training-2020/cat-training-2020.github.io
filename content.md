@@ -1,6 +1,6 @@
 # Catalyst <!-- .element: class="catalyst-logo" -->
 
-# <img src="img/git.png" style="height: 120px; vertical-align: -20px; margin-right: 20px" />Git
+# <img data-src="img/git.png" style="height: 120px; vertical-align: -20px; margin-right: 20px" />Git
 
 Version control with Git and GitHub
 
@@ -15,21 +15,7 @@ Version control with Git and GitHub
 Note:
 This is us.
 
-## Administrivia
 
-- Bathrooms
-- Water
-- Fire exits
-- Meeting point
-
-Note:
-Pravin: Do we need to do this or is it taken care of?
-
-## Administrivia
-
-<img src="img/map.png" />
-
-
 ## Overview
 
 - These slides are online: somewhere-tbc
@@ -52,7 +38,7 @@ Note: Need a place to host slides! They're not there!
 
 # Git
 
-<img src="img/git.png" style="height: 48px; vertical-align: middle;" /> <https://git-scm.org/>
+<img data-src="img/git.png" style="height: 48px; vertical-align: middle;" /> <https://git-scm.org/>
 
 
 # Git
@@ -90,7 +76,7 @@ Note: Industry standard, lightweight
 
 # GitHub
 
-<img src="img/github.png" style="height: 48px; vertical-align: middle;" /> <https://github.com/>
+<img data-src="img/github.png" style="height: 48px; vertical-align: middle;" /> <https://github.com/>
 
 
 # GitHub
@@ -128,7 +114,7 @@ Note: Free, accessible to everyone, great for community/ education
 
 # Atom
 
-<img src="img/atom.png" style="height: 48px; vertical-align: middle;" /> <https://atom.io/>
+<img data-src="img/atom.png" style="height: 48px; vertical-align: middle;" /> <https://atom.io/>
 
 
 # Atom
@@ -167,12 +153,74 @@ Initialise a new "repository" from within GitHub
   - Or navigate to <https://github.com/new>
 
 
+<img data-src="img/6.1.1 github signup.png"  style="margin: -130px; max-width: 130%;">
+Note: - Go to <https://github.com/>
+  - If you have an account, log in
+  - If you don't, create one
+    - You may need to verify your email address
+- Click **New**
+  - Or navigate to <https://github.com/new>
+
+<img data-src="img/6.1.2 github create account.png" style="max-width: 80%; margin: -80px;">
+Note: - Go to <https://github.com/>
+  - If you have an account, log in
+  - If you don't, create one
+    - You may need to verify your email address
+- Click **New**
+  - Or navigate to <https://github.com/new>
+
+<img data-src="img/6.1.3 account info.png" style="margin: -60px; max-width: 110%;">
+Note: - Go to <https://github.com/>
+  - If you have an account, log in
+  - If you don't, create one
+    - You may need to verify your email address
+- Click **New**
+  - Or navigate to <https://github.com/new>
+
+<img data-src="img/6.1.4 account info.png" style="margin: -60px; max-width: 110%;">
+Note: - Go to <https://github.com/>
+  - If you have an account, log in
+  - If you don't, create one
+    - You may need to verify your email address
+- Click **New**
+  - Or navigate to <https://github.com/new>
+
+<img data-src="img/6.1.5 verify email.png" style="vertical-align: 400px; margin: -60px; max-width: 120%;">
+Note: - Go to <https://github.com/>
+  - If you have an account, log in
+  - If you don't, create one
+    - You may need to verify your email address
+- Click **New**
+  - Or navigate to <https://github.com/new>
+
+<img data-src="img/6.1 sign in_.png">
+Note: - Go to <https://github.com/>
+  - If you have an account, log in
+  - If you don't, create one
+    - You may need to verify your email address
+- Click **New**
+  - Or navigate to <https://github.com/new>
+
 ### Create a project
 
 - Enter repository name **cs4hs**
 - Check **Add a README file**
 - Click **Create repository**
-
+
+<img data-src="img/6.2.1 new repo.png" style="margin: -180px; max-width: 130%;">
+Note: - - Enter repository name **cs4hs**
+- Check **Add a README file**
+- Click **Create repository**
+
+<img data-src="img/6.2 new repo create_.png" style="margin: -60px; max-width: 80%;">
+Note: - - Enter repository name **cs4hs**
+- Check **Add a README file**
+- Click **Create repository**
+
+<img data-src="img/6.2 new repo created_.png" style="margin: -180px; max-width: 130%;">
+Note: - - Enter repository name **cs4hs**
+- Check **Add a README file**
+- Click **Create repository**
 
 ### Remote cs4hs repository
 
@@ -202,6 +250,8 @@ Copy the project so you can edit it
   - Close any "welcome" tabs
 
 
+<img data-src="img/7.3 atom-open.png" style="margin: -80px; max-width: 100%;">
+
 ### Clone the cs4hs repository
 
 - Press **Control-Shift-P** to enter a command
@@ -210,6 +260,10 @@ Copy the project so you can edit it
   - **Clone from:** your GitHub repository URL <https://github.com/username/cs4hs>
   - **To directory:** wherever you like, e.g. home/yourname/code/cs4hs
   - To view folder pane on left in Atom, press Alt + \ or View -> 'Toggle tree view'
+
+<img data-src="img/7.4.1 clone.png" style="margin: -80px; max-width: 100%;">
+
+<img data-src="img/7.4.2 clone directories_.png" style="margin: -180px; max-width: 130%;">
 
 ### Local cs4hs repository
 
@@ -240,6 +294,10 @@ This is a project used to experiment with Git and GitHub.
 - Save with **Control-S** (or from the **File** menu)
 
 
+<img data-src="img/8.2 edit readme.png" style="margin: -100px; max-width: 130%;">
+
+<img data-src="img/8.2.2 saved readme .png" style="margin: -100px; max-width: 130%;">
+
 ### Add a Python program
 - Enter **Control-Shift-P** and **Add File**
 - Enter the path for the new file: **hello.py**
@@ -255,6 +313,11 @@ print("Ngā mihi, Evan & Rebecca")
 
 - Remember to save with **Control-S**
 
+
+
+<img data-src="img/8.3.1 add file.png" style="margin: -100px; max-width: 130%;">
+
+<img data-src="img/8.3.2 add path.png" style="margin: -100px; max-width: 130%;">
 
 ### Sidenote: the ".git" folder
 
@@ -287,6 +350,9 @@ Note: The 'git' pane in Atom has this
 or edit the config file in .git to avoid using terminal
 
 
+<img data-src="img/9.1.1 git identity_.png" style="margin: -60px; max-width: 120%;">
+
+
 ### Tell Git who you are
 
 An alternative to setting your **Git Identity** as above, is editing the config file:
@@ -326,17 +392,25 @@ Save your edits to a new version of the project
 Note: <>Jump to File opens for editing, stage file adds all, stage hunk (visible), click in file to stage line
 
 Can unstage in the same ways
+
+
+<img data-src="img/10.3.1 stage readme.png" style="margin: -60px; max-width: 120%;">
 
 ### Commit the edited file
 
 - Enter a **Commit message**: something descriptive
 - Click **Commit to main**
-
+
+<img data-src="img/10.4 commit readme.png" style="margin: -60px; max-width: 120%;">
 
 ### Stage and commit the new file
 
 Use the same process, this time for "hello.py"
 
+
+<img data-src="img/10.4 stage hellopy.png" style="margin: -60px; max-width: 120%;">
+
+<img data-src="img/10.5 commit hellopy.png" style="margin: -60px; max-width: 120%;">
 
 ### Local commit history
 
