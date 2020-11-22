@@ -18,7 +18,7 @@ This is us.
 
 ## Overview
 
-- These slides are online: somewhere-tbc
+- These slides are online: https://cat-training-2020.github.io
 - Tutorial format (with some lecturing thrown in)
 - Tutorial will be in phases (time permitting)
   1. <!-- .element class="fragment" --> Hands-on with GitHub and Atom
@@ -567,8 +567,8 @@ Note: Pull 1. Need diagram of what happened. We undid after pushing to remote, s
 
 Note: confirm this process.
 Are you sure slide
-
-
+
+
 ## Branches
 
 Isolating and sharing specific sets of changes
@@ -580,7 +580,7 @@ Isolating and sharing specific sets of changes
 - Multiple branches in a single repository
 - Let you work without interfering with others
 - Eventually combined or "merged"
-- The default branch is called "master"
+- The default branch is called "main" 
 
 
 ## Overview
@@ -600,7 +600,7 @@ Starts a new set of changes
 ### Create a branch
 
 - Open the "Git" pane
-- Click **master**
+- Click **main**
   - Click **New Branch**
   - Type **feature**
   - Click **New Branch** (again)
@@ -632,10 +632,10 @@ This is some information about the project.
 ### Isolated changes
 
 - Click **feature** to open the branch picker
-  - Click **master** to switch branches
+  - Click **main** to switch branches
 - README.md has changed back
   - The edit has been made to the **feature** branch
-  - The **master** branch remains unchanged
+  - The **main** branch remains unchanged
 
 
 ### 3. Push the branch
@@ -667,7 +667,7 @@ Request your branch to be "merged"
 
 ### 5. Accept the pull request
 
-Merge the "feature" branch into "master"
+Merge the "feature" branch into "main"
 
 
 ### Merge the branch
@@ -695,7 +695,7 @@ Merge the "feature" branch into "master"
 
 - Back in Atom, open the "Git" pane
 - Open the branch picker
-  - Switch back to **master**
+  - Switch back to **main**
 - Click **Fetch**
 - Click **Pull 2**
 
@@ -814,7 +814,7 @@ This is some potentially important information about the project.
 ### Commit the result
 
 - Stage the file
-- Click **Commit to master**
+- Click **Commit to main**
 - The conflict is resolved locally
 
 
