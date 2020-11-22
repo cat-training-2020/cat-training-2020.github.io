@@ -18,7 +18,7 @@ This is us.
 
 ## Overview
 
-- These slides are online: somewhere-tbc
+- These slides are online: https://cat-training-2020.github.io
 - Tutorial format (with some lecturing thrown in)
 - Tutorial will be in phases (time permitting)
   1. <!-- .element class="fragment" --> Hands-on with GitHub and Atom
