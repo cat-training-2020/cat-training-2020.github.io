@@ -543,8 +543,8 @@ Note: Pull 1. Need diagram of what happened. We undid after pushing to remote, s
 
 Note: confirm this process.
 Are you sure slide
-
-
+
+
 ## Branches
 
 Isolating and sharing specific sets of changes
