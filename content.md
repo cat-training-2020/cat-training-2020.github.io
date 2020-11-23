@@ -867,7 +867,6 @@ This is some potentially important information about the project.
 
 - Remember to save the file when finished
 
-
 
 <img data-src="img/Merge conflict.png" style="max-width: 120%; margin: -100px">
 
@@ -928,28 +927,8 @@ Add a file called index.html to your repo:
 - Soon GitHub will deploy your page at `https://<username>.github.io/<repo-name>`
 
 ### View your page
-
-We used GitHub to publish these slides
-<img data-src="img/GitHub pages.png" style="max-width: 80%;">
-
-
-## Some Git terms
-
-- **Repo**: Repository, your git project
-- **Clone**: Copy a repo
-- **Remote**: The remote or cloud computer
-- **Local**: Your computer
-- **Fork**: Make changes to a copied repo
-- **Rebase**: Similar to **Merge** - combine changes
-
-### More git terms
-
-- **Feature**: Branch dedicated to specific feature
-- **Pull Request/Merge Request**: Ask to combine your changes into a someone else's remote repo
-- **Squash**: Combining many commits into one
-- **Hotfix**: Branch dedicated to a single bug
-- **CI**: Testing new commits automatically
-- Others?
+Visit the url. We put our slides on GitHub pages
+<img data-src="img/GitHub pages.png" style="max-width: 70%;">
 
 
 ## Command Line
@@ -1022,13 +1001,32 @@ Using the Git program from the terminal
 ## Questions?
 
 
+## Some Git terms
+
+- **Repo**: Repository, your git project
+- **Clone**: Copy a repo
+- **Remote**: The remote or cloud computer
+- **Local**: Your computer
+- **Fork**: Make changes to a copied repo
+- **Rebase**: Similar to **Merge** - combine changes
+
+### More git terms
+
+- **Feature**: Branch dedicated to specific feature
+- **Pull Request/Merge Request**: Ask to combine your changes into a someone else's remote repo
+- **Squash**: Combining many commits into one
+- **Hotfix**: Branch dedicated to a single bug
+- **CI**: Testing new commits automatically
+- Others?
+
+
 ## Thanks!
 
 - Evan Giles & Rebecca Blundell
 - <evanh@catalyst.net.nz>
 - <rebeccablundell@catalyst.net.nz>
 - Slides will be emailed out
-- Don't hesitate to contact me!
+- Don't hesitate to contact us!
 
 
 <!-- .slide: class="image-slide" -->
