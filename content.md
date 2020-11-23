@@ -413,12 +413,12 @@ Save your edits to a new version of the project
 - Your changes are currently "unstaged"
 - **Right-click** and **Stage** "README.md"
 
-Note: <>Jump to File opens for editing, stage file adds all, stage hunk (visible), click in file to stage line
-
-Can unstage in the same ways
-
 
 <img data-src="img/10.3.1 stage readme.png" style="margin: -60px; max-width: 120%;">
+Note: **Right-click** and **Stage** "README.md"
+<>Jump to File opens for editing, stage file adds all, stage hunk (visible), click in file to stage line
+
+Can unstage in the same ways
 
 ### Commit the edited file
 
@@ -426,6 +426,9 @@ Can unstage in the same ways
 - Click **Commit to main**
 
 <img data-src="img/10.4 commit readme.png" style="margin: -60px; max-width: 120%;">
+Note: - Enter a **Commit message**: something descriptive
+- Click **Commit to main**
+<p style="color:rebeccapurple;">wb: add "Update readme" commit</p>
 
 ### Stage and commit the new file
 
@@ -433,8 +436,14 @@ Use the same process, this time for "hello.py"
 
 
 <img data-src="img/10.4 stage hellopy.png" style="margin: -60px; max-width: 120%;">
+Note: **Right-click** and **Stage**
 
 <img data-src="img/10.5 commit hellopy.png" style="margin: -60px; max-width: 120%;">
+
+Note:- Enter a **Commit message**
+- Click **Commit to main**
+
+<p style="color:rebeccapurple;">wb: add "Add hello.py" commit</p>
 
 ### Local commit history
 
@@ -458,6 +467,7 @@ Now you can publish these new commits on GitHub
 [remote "origin"]
   url = https://<username>@github.com/<username>/cs4hs.git
 ```
+Note: Replace 'username' with your github username
 
 
 ### Push your commits
@@ -469,13 +479,27 @@ Now you can publish these new commits on GitHub
 - Paste it into Atom under **Enter Token**
 - Click **Login**
 
+<img data-src="img/11.3.1 login to github.png" style="margin: -60px; max-width: 120%;">
+Note: - Open the "GitHub" pane
+- Click **Login**
+
+<img data-src="img/11.3.2 get token.png" style="margin: -60px; max-width: 120%;">
+Note: - Follow the link to <https://github.atom.io/login>
+
+<img data-src="img/11.3.3 copy token.png" style="margin: -60px; max-width: 120%;">
+Note:
+- Copy the generated token
+- Paste it into Atom under **Enter Token**
+- Click **Login**
+
 ### Push your commits
 
 - Open the "Git" pane
 - Click **Push 2** on the bottom right in Atom
 - Visit GitHub to view your published changes
 
-Note:
+Note: Push 2 commits
+<p style="color:rebeccapurple;">wb: add commits to remote</p>
 
 
 ## Review
@@ -509,6 +533,18 @@ Your project now has a "history" you can review
   6. <!-- .element class="fragment" --> A unique ID
      - This is also known as its "hash" or "SHA1"
 
+
+<img data-src="img/14.2 commit elements.png" style="margin: -60px; max-width: 120%;">
+
+Note:- Every commit has:
+  1. A message
+  2. An author
+  3. A date
+  4. A set of changes
+  5. A "parent" commit
+  6. A unique ID
+     - This is also known as its "hash" or "SHA1"
+
 
 ## Fix-ups
 
@@ -522,6 +558,8 @@ What to do when you've made a mistake?
   - The commit is deleted
   - Its changes are moved back into the staging area
   - Its message is preserved
+
+Note: <p style="color:rebeccapurple">wb: rub out the local commit</p>
 
 
 ### Fix a commit
@@ -550,24 +588,31 @@ print("PS. I'm learning Git")
 - Commit the result
   - You have just replaced the old commit with a new one
 
+Note: <p style="color:rebeccapurple">wb: replace the local commit</p>
 
 ### Push the commit
 
 - Hover over the button you used to push
   - What does it say now?
 
-Note: Pull 1. Need diagram of what happened. We undid after pushing to remote, so repos diverged. Either fix merge conflict or force push.
+Note: It says "Pull 1". (But it can't pull without a conflict)
+We undid after pushing to remote, so repos diverged...
 
 
 ### Push the commit
 
 - To push these commits you must "force push"
 - **Right-Click** and choose **Force Push**
-  - This overwrites data on the remote repository!
 
-Note: confirm this process.
-Are you sure slide
+Note: We must either fix merge conflict or force push. In **this** case we will force push.
 
+
+You will see a warning message as this overwrites data on the remote repository!
+<img data-src="img/force push.png" style="max-width: 120%;">
+
+Note: Normally we would avoid this, but we know no one else is working on the repo at this stage.
+
+<p style="color:rebeccapurple;">wb: replace the commit on the remote</p>
 
 ## Branches
 
@@ -580,7 +625,7 @@ Isolating and sharing specific sets of changes
 - Multiple branches in a single repository
 - Let you work without interfering with others
 - Eventually combined or "merged"
-- The default branch is called "main" 
+- The default branch is called "main"
 
 
 ## Overview
