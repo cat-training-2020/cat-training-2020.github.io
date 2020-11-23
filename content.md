@@ -100,7 +100,7 @@ Why is GitHub useful?
 4. <!-- .element class="fragment" --> Create a static website with GitHub pages
 5. <!-- .element class="fragment" --> Comprehensive documentation: https://docs.github.com/en
 
-Note: Demo? Add screenshot of repo?
+Note:
 
 
 ## GitHub
@@ -208,19 +208,20 @@ Note: - Go to <https://github.com/>
 - Click **Create repository**
 
 <img data-src="img/6.2.1 new repo.png" style="margin: -180px; max-width: 130%;">
-Note: - - Enter repository name **cs4hs**
+
+Note: - Click **New**
+  - Or navigate to <https://github.com/new>
+- Enter repository name **cs4hs**
 - Check **Add a README file**
 - Click **Create repository**
 
 <img data-src="img/6.2 new repo create_.png" style="margin: -60px; max-width: 80%;">
-Note: - - Enter repository name **cs4hs**
+Note: - Enter repository name **cs4hs**
 - Check **Add a README file**
 - Click **Create repository**
 
 <img data-src="img/6.2 new repo created_.png" style="margin: -180px; max-width: 130%;">
-Note: - - Enter repository name **cs4hs**
-- Check **Add a README file**
-- Click **Create repository**
+Note: This is what it looks like created.
 
 ### Remote cs4hs repository
 
@@ -229,6 +230,8 @@ Note: - - Enter repository name **cs4hs**
 - Publically accessible
   - Anyone can see it
   - Only you can modify it
+
+Note: <p style="color:rebeccapurple;">wb: Draw remote with one commit ("initial commit")</p>
 
 
 ### 2. "Clone" the project
@@ -251,6 +254,8 @@ Copy the project so you can edit it
 
 
 <img data-src="img/7.3 atom-open.png" style="margin: -80px; max-width: 100%;">
+Note: - Open Atom
+  - Close any "welcome" tabs
 
 ### Clone the cs4hs repository
 
@@ -262,8 +267,18 @@ Copy the project so you can edit it
   - To view folder pane on left in Atom, press Alt + \ or View -> 'Toggle tree view'
 
 <img data-src="img/7.4.1 clone.png" style="margin: -80px; max-width: 100%;">
+
+Note: Press **Control-Shift-P** to enter a command
+- Type **GitHub: Clone** and press **Enter**
+
 
 <img data-src="img/7.4.2 clone directories_.png" style="margin: -180px; max-width: 130%;">
+
+Note:
+Choose file locations
+- **Clone from:** your GitHub repository URL <https://github.com/username/cs4hs>
+- **To directory:** wherever you like, e.g. home/yourname/code/cs4hs
+- To view folder pane on left in Atom, press Alt + \ or View -> 'Toggle tree view'
 
 ### Local cs4hs repository
 
@@ -272,7 +287,7 @@ Copy the project so you can edit it
 - Files and folders behave as usual
 - Linked to the version on GitHub
 
-Note: draw picture
+Note: <p style="color:rebeccapurple;">wb: Add local</p>
 
 ### 3. Change some files
 
@@ -316,8 +331,10 @@ print("Ngā mihi, Evan & Rebecca")
 
 
 <img data-src="img/8.3.1 add file.png" style="margin: -100px; max-width: 130%;">
+Note: Enter **Control-Shift-P** and **Add File**
 
 <img data-src="img/8.3.2 add path.png" style="margin: -100px; max-width: 130%;">
+Note: - Enter the path for the new file: **hello.py**
 
 ### Sidenote: the ".git" folder
 
@@ -351,6 +368,13 @@ or edit the config file in .git to avoid using terminal
 
 
 <img data-src="img/9.1.1 git identity_.png" style="margin: -60px; max-width: 120%;">
+Note: - Click the **Git** button on the lower right corner of your Atom window
+
+ - You should see a **Git Identity** pane
+
+- Check the username and email you want to use for commits are correct
+
+- Click **Continue**
 
 
 ### Tell Git who you are
@@ -364,9 +388,9 @@ An alternative to setting your **Git Identity** as above, is editing the config 
   name = Your Name
   email = you@example.com
 ```
-
+Note: If the Git Identity window worked for you, you don't need to do this step.
 
-### 4. "Commit" the changes
+### 4. "Stage" and "Commit" the changes
 
 Save your edits to a new version of the project
 
