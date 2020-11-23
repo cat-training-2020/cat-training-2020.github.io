@@ -651,6 +651,7 @@ Starts a new set of changes
   - Click **New Branch** (again)
 - You have a new "feature" branch
 
+<img data-src="img/feature branch.png" style="max-width: 120%; align:middle;">
 
 ### 2. Commit to the branch
 
@@ -696,6 +697,9 @@ Send the new branch to GitHub
 - Visit your project on GitHub
   - The **feature** branch has been pushed
 
+
+<img data-src="img/new branch.png" style="max-width: 100%; align:middle;">
+
 
 ### 4. Create a pull request
 
@@ -709,6 +713,8 @@ Request your branch to be "merged"
 - Click **Create pull request**
 
 
+
+<img data-src="img/pull request.png" style="max-width: 120%; margin: -100px">
 
 ### 5. Accept the pull request
 
@@ -725,6 +731,8 @@ Merge the "feature" branch into "main"
   - Removes it from the remote repository
 
 
+<img data-src="img/Merge pull request.png" style="max-width: 120%; margin: -100px">
+
 ### Review the new commits
 
 - The two branches have been combined
@@ -734,6 +742,7 @@ Merge the "feature" branch into "main"
 - The combination happened on GitHub
   - GitHub is the *remote* repository
   - Your *local* repository is now out of date
+Note: <p style="color:rebeccapurple;">wb: merge branches on remote and delete branch</p>
 
 
 ### Update your local repo
@@ -743,6 +752,8 @@ Merge the "feature" branch into "main"
   - Switch back to **main**
 - Click **Fetch**
 - Click **Pull 2**
+
+Note: <p style="color:rebeccapurple;">wb: update local with merge</p>
 
 
 ### Update your local repo
@@ -796,7 +807,6 @@ This is some important information about the project.
 - Make it read "important information"
 - Commit the result
 
-
 
 ### Edit a file remotely
 
@@ -838,10 +848,12 @@ Try (and fail) to combine the two branches
 Indicate how the two changes should be combined
 
 
-### Pick a side
+### Choose a version
 
 - The two different versions are coloured
-- Edit the highlighted region to be "correct"
+- Click **Use me** for the version that is "correct"
+- You can edit the text if neither one is right
+
 
 ``` markdown
 # cs4hs
@@ -854,6 +866,10 @@ This is some potentially important information about the project.
 ```
 
 - Remember to save the file when finished
+
+
+
+<img data-src="img/Merge conflict.png" style="max-width: 120%; margin: -100px">
 
 
 ### Commit the result
@@ -881,73 +897,56 @@ This is some potentially important information about the project.
 ## Questions?
 
 
-## GitHub Workflows
+## GitHub Pages
 
-A few helpful tips for working with GitLab
+Publish a static webpage with Github pages
+
+
+### Create a (very) basic website
+
+Add a file called index.html to your repo:
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>My page</title>
+  </head>
+  <body>
+    <p>Here is the content of my page!</p>
+  </body>
+</html>
+```
+
+### Deploy your page
+
+- Choose Settings in your GitHub menu
+- Under **GitHub Pages** choose the branch and the folder to serve the page from:
+  - main
+  - root
+- Click **Save**
+- Soon GitHub will deploy your page at `https://<username>.github.io/<repo-name>`
+
+### View your page
+
+We used GitHub to publish these slides
+<img data-src="img/GitHub pages.png" style="max-width: 80%;">
 
 
-### Forking
+## Some Git terms
 
-Contributing to a project that isn't yours
-
+- **Repo**: Repository, your git project
+- **Clone**: Copy a repo
+- **Remote**: The remote or cloud computer
+- **Local**: Your computer
+- **Fork**: Make changes to a copied repo
+- **Rebase**: Similar to **Merge** - combine changes
 
-### Forks
+### More git terms
 
-- A "fork" is a copy of a repo *on GitHub*
-  - Copies from one user account to another
-  - Think of it like a "remote clone"
-
-
-### Forks
-
-- The result is a repo you control
-  - You clone your forked copy
-  - You push commits
-- Pull request comes from your fork
-
-
-### Let's try it
-
-- Navigate to my cs4hs repository
-  - <https://github.com/cat-train1/cs4hs>
-- Click **fork**
-
-
-### Clone your fork
-
-- In Atom use **Control-Shift-P**
-  - Choose **GitHub: Clone**
-- Enter the fork's URL *including your username*
-- Click **Clone**
-
-
-### Make some changes
-
-- Use the standard workflow:
-  1. Edit
-  2. Stage
-  3. Commit
-  4. Push
-- Visit your project on GitHub
-
-
-### Open a pull request
-
-- Click **New pull request**
-- Click **Create pull request**
-  - This request will be in my repo
-
-
-### Git Culture
-
-Some keywords to help navigate the landscape
-
-
-### Git Keywords
-
-- **Squash**: Combining many commits into one
-- **Rebase**: Alternative to merging
 - **Feature**: Branch dedicated to specific feature
+- **Pull Request/Merge Request**: Ask to combine your changes into a someone else's remote repo
+- **Squash**: Combining many commits into one
 - **Hotfix**: Branch dedicated to a single bug
 - **CI**: Testing new commits automatically
 - Others?
@@ -964,7 +963,6 @@ Using the Git program from the terminal
   - Windows: Git Bash
   - macOS: Terminal
   - Linux: Terminal
-
 
 ### Using the Terminal
 
@@ -980,8 +978,8 @@ Using the Git program from the terminal
 ### Configuring Git
 
 - `git config core.editor "atom --wait"`
-- <!-- .element class="fragment" --> `git config user.name "Evan Hanson"`
-- <!-- .element class="fragment" --> `git config user.email "evanh@catalyst.net.nz"`
+- <!-- .element class="fragment" --> `git config user.name "Rebecca Blundell"`
+- <!-- .element class="fragment" --> `git config user.email "rebeccablundell@catalyst.net.nz"`
 
 
 ### Cloning a project
