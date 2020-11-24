@@ -56,6 +56,7 @@ Why is it useful?
 2. <!-- .element class="fragment" --> Review and revert back to old versions
 3. <!-- .element class="fragment" --> Synchronise files between different locations
 4. <!-- .element class="fragment" --> Test changes without losing the original copy
+5. <!-- .element class="fragment" --> Facilitates teamwork
 
 Note: 1. See who made changes when
 2. Combine changes from different versions
@@ -555,7 +556,7 @@ What to do when you've made a mistake?
 
 - Open the "Git" pane
 - Click **Undo** on the most recent commit
-  - The commit is deleted
+  - The commit is discarded
   - Its changes are moved back into the staging area
   - Its message is preserved
 
@@ -647,9 +648,9 @@ Starts a new set of changes
 - Open the "Git" pane
 - Click **main**
   - Click **New Branch**
-  - Type **feature**
+  - Type **feature1**
   - Click **New Branch** (again)
-- You have a new "feature" branch
+- You have a new "feature1" branch
 
 <img data-src="img/feature branch.png" style="max-width: 120%; align:middle;">
 
@@ -669,7 +670,7 @@ New commits are added to the active branch
 
 This is a project used to experiment with Git and GitHub.
 
-This is some information about the project.
+I changed this line in the 'feature1' branch
 ```
 
 - Save and commit the change as usual
@@ -677,10 +678,10 @@ This is some information about the project.
 
 ### Isolated changes
 
-- Click **feature** to open the branch picker
+- Click **feature1** to open the branch picker
   - Click **main** to switch branches
 - README.md has changed back
-  - The edit has been made to the **feature** branch
+  - The edit has been made to the **feature1** branch
   - The **main** branch remains unchanged
 
 
@@ -692,10 +693,10 @@ Send the new branch to GitHub
 ### Push the branch
 
 - Open the "Git" pane
-- Switch back to **feature**
+- Switch back to **feature1**
 - Click **Publish**
 - Visit your project on GitHub
-  - The **feature** branch has been pushed
+  - The **feature1** branch has been pushed
 
 
 <img data-src="img/new branch.png" style="max-width: 100%; align:middle;">
@@ -718,7 +719,7 @@ Request your branch to be "merged"
 
 ### 5. Accept the pull request
 
-Merge the "feature" branch into "main"
+Merge the "feature1" branch into "main"
 
 
 ### Merge the branch
@@ -769,6 +770,41 @@ Note: <p style="color:rebeccapurple;">wb: update local with merge</p>
 3. Pushed the branch (to GitHub)
 4. Created a pull request (on GitHub)
 5. Accepted the pull request (on GitHub)
+
+
+## GitHub Pages
+
+Publish a static webpage with Github pages
+
+
+### Create a (very) basic website
+
+Add a file called index.html to your repo:
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>My page</title>
+  </head>
+  <body>
+    <p>Here is the content of my page!</p>
+  </body>
+</html>
+```
+
+### Deploy your page
+
+- Choose Settings in your GitHub menu
+- Under **GitHub Pages** choose the branch and the folder to serve the page from:
+  - main
+  - root
+- Click **Save**
+- Soon GitHub will deploy your page at `https://<username>.github.io/<repo-name>`
+
+### View your page
+Visit the url. We put our slides on GitHub pages
+<img data-src="img/GitHub pages.png" style="max-width: 70%;">
 
 
 ## Merge Conflicts
@@ -894,41 +930,6 @@ This is some potentially important information about the project.
 
 
 ## Questions?
-
-
-## GitHub Pages
-
-Publish a static webpage with Github pages
-
-
-### Create a (very) basic website
-
-Add a file called index.html to your repo:
-```
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>My page</title>
-  </head>
-  <body>
-    <p>Here is the content of my page!</p>
-  </body>
-</html>
-```
-
-### Deploy your page
-
-- Choose Settings in your GitHub menu
-- Under **GitHub Pages** choose the branch and the folder to serve the page from:
-  - main
-  - root
-- Click **Save**
-- Soon GitHub will deploy your page at `https://<username>.github.io/<repo-name>`
-
-### View your page
-Visit the url. We put our slides on GitHub pages
-<img data-src="img/GitHub pages.png" style="max-width: 70%;">
 
 
 ## Command Line
