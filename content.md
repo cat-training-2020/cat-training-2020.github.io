@@ -779,7 +779,7 @@ Publish a static webpage with Github pages
 
 ### Create a (very) basic website
 
-Add a file called index.html to your repo:
+Add a file called **index.html** to your repo:
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -802,9 +802,20 @@ Add a file called index.html to your repo:
 - Click **Save**
 - Soon GitHub will deploy your page at `https://<username>.github.io/<repo-name>`
 
-### View your page
-Visit the url. We put our slides on GitHub pages
+### Review settings
+We put our slides on GitHub pages:
 <img data-src="img/GitHub pages.png" style="max-width: 70%;">
+
+
+### View your page
+- Visit the url
+- You will see:</br>
+<small>**Here is the content of my page!**</small>
+
+- To start with more functionality, use a framework like **Jekyll**
+- Read more here:
+https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages
+
 
 
 ## Merge Conflicts
